@@ -4,8 +4,11 @@
   box-sizing: inherit;
 }
 
-body {
+html {
   font-size: 62.5%;
+}
+
+body {
   box-sizing: border-box;
   height: 100vh;
   background-color: #121622;
