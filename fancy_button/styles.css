@@ -21,6 +21,7 @@ body {
   background-color: transparent;
   border: 2px solid currentColor;
   border-radius: 0;
+  cursor: pointer;
   transition: all .3s;
 }
 
