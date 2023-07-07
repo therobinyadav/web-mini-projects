@@ -5,12 +5,12 @@
 }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
-  box-sizing: border-box;
 }
 
 nav {
