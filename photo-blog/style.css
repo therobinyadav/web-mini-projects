@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2rem 4rem 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding: 4rem;
+}
+
+.image-box {
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: scale .3s;
+}
+
+.image:hover {
+  scale: 1.2;
+}
