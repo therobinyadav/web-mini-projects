@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  text-align: center;
+  width: 80rem;
+  background-color: #fff;
+  display: flex;
+  border-radius: .6rem;
+  padding: 2rem;
+}
+
+.pricing-plan {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-plan:nth-of-type(2) {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.icon {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 1px;
+  margin: 2rem 0 2.6rem;
+}
+
+.features {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #016ff9;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.features-item {
+  padding: 1.2rem 0;
+  border-top: 1px solid #eee;
+}
+
+.features-item:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #016ff9;
+  margin: 1.6rem 0;
+}
+
+.btn:link,
+.btn:visited {
+  color: #60a9ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 1px solid #60a9ff;
+  border-radius: .6rem;
+  padding: 1.2rem 0;
+  width: 14rem;
+  transition: all .3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #60a9ff;
+  color: #fff;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: #60a9ff;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #fff;
+  color: #60a9ff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  .panel {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .pricing-plan {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .panel {
+    flex-direction: column;
+  }
+
+  .pricing-plan {
+    padding: 6rem;
+  }
+
+  .pricing-plan:nth-of-type(2) {
+    border: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+}
