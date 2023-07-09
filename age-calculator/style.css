@@ -64,6 +64,7 @@ body {
   padding: .6em;
   border: .2em solid #333;
   border-radius: .4em;
+  background-color: rgba(83, 83, 255, 0.4);
 }
 
 .btn {
