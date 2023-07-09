@@ -12,14 +12,14 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   height: 100vh;
-  background: linear-gradient(to bottom right, rgb(83, 83, 255), rgb(1, 1, 151));
+  background: linear-gradient(to bottom right, rgb(3, 125, 255), rgb(3, 3, 255));
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 *:focus-visible {
-  outline: .4rem solid rgba(0, 0, 255, 0.4);
+  outline: .4rem solid rgba(3, 125, 255, 0.4);
 }
 
 .container {
@@ -64,7 +64,7 @@ body {
   padding: .6em;
   border: .2em solid #333;
   border-radius: .4em;
-  background-color: rgba(83, 83, 255, 0.4);
+  background-color: rgba(3, 125, 255, 0.2);
 }
 
 .btn {
