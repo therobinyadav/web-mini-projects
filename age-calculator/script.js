@@ -1,35 +1,29 @@
 'use strict';
 
 const calcBtnEl = document.querySelector('.btn');
-const dateInputEl = document.querySelector('.date');
-const monthInputEl = document.querySelector('.month');
-const yearInputEl = document.querySelector('.year');
+const dobInputEl = document.querySelector('.dob-input');
 const ageEl = document.querySelector('.age');
 
 const today = new Date();
+const year = today.getFullYear();
+const month = `${today.getMonth()}`.padStart(2, '0');
+const date = `${today.getDate()}`.padStart(2, '0');
 
 // Initialization
 (function () {
-  const date = today.getDate();
-  const month = today.getMonth();
-  const year = today.getFullYear();
-  dateInputEl.value = date;
-  document.getElementsByTagName('option')[month].selected = 'selected';
-  yearInputEl.value = year;
-  yearInputEl.setAttribute('min', `${year - 200}`);
-  yearInputEl.setAttribute('max', year);
+  dobInputEl.setAttribute('value', `${year}-${month}-${date}`);
+  dobInputEl.setAttribute('min', `${year - 200}-${month}-${date}`);
+  dobInputEl.setAttribute('max', `${year}-${month}-${date}`);
 })();
 
 calcBtnEl.addEventListener('click', function () {
-  if (
-    +yearInputEl.value === today.getFullYear() &&
-    +monthInputEl.value - 1 === today.getMonth() &&
-    +dateInputEl.value === today.getDate()
-  ) {
-    ageEl.textContent = `Happy Birthday 🎉`;
+  const [dobYear, dobMonth, dobDate] = dobInputEl.value.split('-');
+
+  if (+dobYear === year && +dobMonth === +month && +dobDate === +date) {
+    ageEl.textContent = 'Happy Birthday 🎉';
+    ageEl.classList.remove('hidden');
   } else {
-    ageEl.textContent = `Your age is ${
-      today.getFullYear() - yearInputEl.value
-    }`;
+    ageEl.textContent = `Your age is ${year - +dobYear}`;
+    ageEl.classList.remove('hidden');
   }
 });

@@ -18,27 +18,10 @@
   <body>
     <main class="container">
       <h1 class="heading">Age Calculator</h1>
-      <h2 class="age"></h2>
+      <h2 class="age hidden">&nbsp;</h2>
       <form class="form" action="#">
         <label class="dob-label" for="dob">Enter your DOB</label>
-        <div class="input-box">
-          <input class="input date" id="dob" type="number" min="1" max="31" />
-          <select class="input month">
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-          <input class="input year" type="number" />
-        </div>
+        <input class="dob-input" id="dob" type="date" />
         <button class="btn" type="button">Calculate</button>
       </form>
     </main>
