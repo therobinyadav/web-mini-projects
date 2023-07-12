@@ -6,7 +6,7 @@ const ageEl = document.querySelector('.age');
 
 const today = new Date();
 const year = today.getFullYear();
-const month = `${today.getMonth()}`.padStart(2, '0');
+const month = `${today.getMonth() + 1}`.padStart(2, '0');
 const date = `${today.getDate()}`.padStart(2, '0');
 
 // Initialization
@@ -19,11 +19,8 @@ const date = `${today.getDate()}`.padStart(2, '0');
 calcBtnEl.addEventListener('click', function () {
   const [dobYear, dobMonth, dobDate] = dobInputEl.value.split('-');
 
-  if (+dobYear === year && +dobMonth === +month && +dobDate === +date) {
+  if (+dobMonth === +month && +dobDate === +date) {
     ageEl.textContent = 'Happy Birthday 🎉';
-    ageEl.classList.remove('hidden');
-  } else {
-    ageEl.textContent = `Your age is ${year - +dobYear}`;
     ageEl.classList.remove('hidden');
   }
 });
