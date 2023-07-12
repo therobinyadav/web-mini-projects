@@ -18,9 +18,17 @@ const date = `${today.getDate()}`.padStart(2, '0');
 
 calcBtnEl.addEventListener('click', function () {
   const [dobYear, dobMonth, dobDate] = dobInputEl.value.split('-');
+  let displayYear = +dobMonth > +month ? year - dobYear - 1 : year - dobYear;
+
+  if (+dobMonth === +month) {
+    displayYear = +dobDate > +date ? year - dobYear - 1 : year - dobYear;
+  }
 
   if (+dobMonth === +month && +dobDate === +date) {
     ageEl.textContent = 'Happy Birthday 🎉';
+    ageEl.classList.remove('hidden');
+  } else {
+    ageEl.textContent = `Your age is ${displayYear}`;
     ageEl.classList.remove('hidden');
   }
 });
