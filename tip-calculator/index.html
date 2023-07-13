@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="heading">Tip Calculator</h1>
+      <form action="#" class="form">
+        <label class="label" for="bill">Bill amount</label>
+        <input class="input" id="bill" type="number" min="1" />
+
+        <label class="label" for="tip">Tip percentage</label>
+        <input class="input" id="tip" type="number" min="0" max="100" />
+
+        <button class="btn" type="button">Calculate</button>
+      </form>
+      <p class="total">Total: <span class="result">&nbsp;</span></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
