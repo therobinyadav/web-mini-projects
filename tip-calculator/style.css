@@ -79,3 +79,12 @@ body {
   font-size: 1.2rem;
   margin-top: 1.4em;
 }
+
+/* MEDIA QUERIES */
+
+/* 600 px */
+@media only screen and (max-width: 37.5em) {
+  .container {
+    width: 80%;
+  }
+}
