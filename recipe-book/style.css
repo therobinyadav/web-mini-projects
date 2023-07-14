@@ -75,6 +75,10 @@ body {
   padding: 1.75em 0;
 }
 
+.recipe:first-of-type {
+  padding-top: 0;
+}
+
 .recipe:not(:last-of-type) {
   border-bottom: .1em solid #eee;
 }
@@ -131,4 +135,25 @@ body {
 .error {
   text-align: center;
   color: #fc4141;
+}
+
+/* MEDIA QUERIES */
+
+/* 600px */
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .recipe {
+    width: 100%;
+  }
+
+  .recipe-content {
+    width: 40%;
+  }
 }
