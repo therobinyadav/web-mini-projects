@@ -153,6 +153,11 @@ body {
     width: 100%;
   }
 
+  .recipe-image-box {
+    width: 6rem;
+    height: 6rem;
+  }
+
   .recipe-content {
     width: 40%;
   }
