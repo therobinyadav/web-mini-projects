@@ -4,7 +4,7 @@ const searchInputEl = document.querySelector('.search-input');
 const searchBtnEl = document.querySelector('.search-btn');
 const recipesEl = document.querySelector('.recipes');
 
-const getRecipes = async function (searchQuery) {
+const getAllRecipes = async function (searchQuery) {
   const res = await fetch(
     `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchQuery}`
   );
@@ -12,9 +12,18 @@ const getRecipes = async function (searchQuery) {
   return data.data.recipes;
 };
 
-const renderRecipe = async function (searchQuery) {
-  const recipeArr = await getRecipes(searchQuery);
-  if (!recipeArr.length) {
+const getRecipeData = async function (recipeID) {
+  const res = await fetch(
+    `https://forkify-api.herokuapp.com/api/v2/recipes/${recipeID}`
+  );
+  const {
+    data: { recipe },
+  } = await res.json();
+  return recipe;
+};
+
+const renderRecipe = async function (recipesArr) {
+  if (!recipesArr.length) {
     // Display error
     const error = `
     <div class="error">No results found! Try using a different query :)</div>
@@ -22,21 +31,22 @@ const renderRecipe = async function (searchQuery) {
     recipesEl.insertAdjacentHTML('beforeend', error);
   } else {
     // render recipes
-    for (let recipe of recipeArr) {
+    for (let recipe of recipesArr) {
+      const recipeData = await getRecipeData(recipe.id);
       const recipeMarkup = `
         <div class="recipe">
           <div class="recipe-image-box">
             <img
               class="recipe-image"
-              src=${recipe.image_url}
-              alt=${recipe.title}
+              src=${recipeData.image_url}
+              alt=${recipeData.title}
             />
           </div>
           <div class="recipe-content">
-            <p class="recipe-title">${recipe.title}</p>
-            <p class="recipe-publisher">by ${recipe.publisher}</p>
+            <p class="recipe-title">${recipeData.title}</p>
+            <p class="recipe-publisher">by ${recipeData.publisher}</p>
           </div>
-          <a class="recipe-link" href="#">View Recipe</a>
+          <a class="recipe-link" target="_blank" href=${recipeData.source_url}>View Recipe</a>
         </div>
           `;
       recipesEl.insertAdjacentHTML('beforeend', recipeMarkup);
@@ -44,9 +54,10 @@ const renderRecipe = async function (searchQuery) {
   }
 };
 
-searchBtnEl.addEventListener('click', function (e) {
+searchBtnEl.addEventListener('click', async function (e) {
   e.preventDefault();
   recipesEl.innerHTML = '';
-  renderRecipe(searchInputEl.value);
+  const recipes = await getAllRecipes(searchInputEl.value);
+  renderRecipe(recipes);
   searchInputEl.value = '';
 });
