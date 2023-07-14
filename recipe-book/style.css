@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+}
+
+*:focus-visible {
+  outline: 0.2rem solid rgba(75, 143, 140, 0.4);
+}
+
+.header {
+  background-color: #4B8F8C;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.form {
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.search-input {
+  font-family: inherit;
+  font-size: 1.2rem;
+  flex: 1;
+  border: .1em solid #bbb;
+  padding: .6em 2rem;
+  color: #888;
+}
+
+.search-btn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  background-color: #4B8F8C;
+  border: .1em solid #4B8F8C;
+  color: #fff;
+  padding: .6em 1.2em;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.search-btn:hover {
+  background-color: #407a78;
+}
