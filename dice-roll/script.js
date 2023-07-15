@@ -22,11 +22,16 @@ rollBtnEl.addEventListener('click', function () {
     diceImgEl.classList.remove('roll-animation');
 
     const markup = `
-    <div class="roll">
-      <p class="roll-text">Roll ${rollCount}</p>
-      <img class="dice-img" src=${imgSrc} alt="${imgAlt}" />
-    </div>
-  `;
+      <li class="roll">
+        <p class="roll-text">Roll ${rollCount}</p>
+        <img class="dice-img" src=${imgSrc} alt="${imgAlt}" />
+      </li>
+    `;
     rollRecordsEl.insertAdjacentHTML('beforeend', markup);
+
+    rollRecordsEl.scrollTo({
+      top: rollRecordsEl.scrollHeight,
+      behavior: 'smooth',
+    });
   }, 1000);
 });

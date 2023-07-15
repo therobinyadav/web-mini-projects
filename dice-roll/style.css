@@ -68,6 +68,8 @@ body {
 
 .roll-records {
   width: 40rem;
+  height: 30rem;
+  overflow-y: scroll;
   margin: 4rem auto;
 }
 
