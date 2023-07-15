@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+}
+
+*:focus-visible {
+  outline: .2rem solid rgba(0, 102, 255, 0.4);
+}
+
+/* UTILITY CLASSES */
+.roll-animation {
+  animation-name: roll;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* MAIN STYLES */
+.header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.dice-roll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.dice-img-box {
+  width: 12rem;
+}
+
+.dice-img {
+  width: 100%;
+  display: block;
+}
+
+.roll-btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: .4em;
+  padding: .5em 1em;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.roll-btn:hover {
+  background-color: #005ce6;
+}
+
+.roll-records {
+  width: 40rem;
+  margin: 4rem auto;
+}
+
+.roll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: .6rem;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.075);
+}
+
+.roll:not(:last-of-type) {
+  margin-bottom: 1.6rem;
+}
+
+.roll .dice-img {
+  width: 4rem;
+}
+
+/* ANIMATIONS */
+@keyframes roll {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
+/* MEDIA QUERIES */
+/* 600px */
+@media only screen and (max-width: 37.5em) {
+  .roll-records {
+    width: 80%;
+  }
+}
