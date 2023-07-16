@@ -45,3 +45,9 @@ Search for a keyword and this app wil list down all recipes with their respectiv
 Don't have a physical dice? Use this to randomly generate a dice roll and keep track of roll history.
 ## Live View
 🔗 [Dice Roll](https://therobinyadav.github.io/web-mini-projects/dice-roll/)
+
+# Pomodoro Timer
+## About
+Increase your productivity using this 25 minutes pomodoro timer.
+## Live View
+🔗 [Pomodoro Timer](https://therobinyadav.github.io/web-mini-projects/pomodoro-timer/)
