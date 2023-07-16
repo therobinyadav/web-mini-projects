@@ -8,8 +8,6 @@ let rollCount = 0;
 const randomNum = () => Math.floor(Math.random() * 6) + 1;
 
 rollBtnEl.addEventListener('click', function () {
-  rollCount++;
-
   const diceValue = randomNum();
   const imgSrc = `img/dice-${diceValue}.png`;
   const imgAlt = `Dice with ${diceValue} ${diceValue !== 1 ? 'dots' : 'dot'}`;
@@ -20,6 +18,8 @@ rollBtnEl.addEventListener('click', function () {
 
   setTimeout(() => {
     diceImgEl.classList.remove('roll-animation');
+
+    rollCount++;
 
     const markup = `
       <li class="roll">
