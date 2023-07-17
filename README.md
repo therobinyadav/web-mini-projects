@@ -51,3 +51,9 @@ Don't have a physical dice? Use this to randomly generate a dice roll and keep t
 Increase your productivity using this 25 minutes pomodoro timer.
 ## Live View
 🔗 [Pomodoro Timer](https://therobinyadav.github.io/web-mini-projects/pomodoro-timer/)
+
+# Rock Paper Scissors
+## About
+Bored and don't have any friends? Play this simple game with computer.
+## Live View
+🔗 [Rock Paper Scissors](https://therobinyadav.github.io/web-mini-projects/rock-paper-scissors/)
