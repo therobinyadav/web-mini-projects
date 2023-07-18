@@ -7,12 +7,12 @@ const btnResetEl = document.querySelector('.btn-reset');
 
 let timerInterval;
 let timeLeft = 1500; // 25 Minutes = 1500 Seconds
-let timeStarted = false;
+let timerStarted = false;
 
 const updateTimer = function () {
-  let minutes = Math.floor(timeLeft / 60);
-  let seconds = timeLeft % 60;
-  let formattedTime =
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+  const formattedTime =
     `${minutes}`.padStart(2, '0') + ':' + `${seconds}`.padStart(2, '0');
   timerEl.textContent = formattedTime;
 };
@@ -21,8 +21,8 @@ const updateTimer = function () {
 updateTimer();
 
 const startTimer = function () {
-  if (!timeStarted) {
-    timeStarted = true;
+  if (!timerStarted) {
+    timerStarted = true;
     timerInterval = setInterval(() => {
       timeLeft--;
       updateTimer();
@@ -30,7 +30,7 @@ const startTimer = function () {
         clearInterval(timerInterval);
         alert('Well done! Now you can have a break.');
         timeLeft = 1500;
-        timeStarted = false;
+        timerStarted = false;
       }
     }, 1000);
   }
@@ -38,7 +38,7 @@ const startTimer = function () {
 
 const stopTimer = function () {
   clearInterval(timerInterval);
-  timeStarted = false;
+  timerStarted = false;
 };
 
 const resetTimer = function () {
