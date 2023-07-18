@@ -57,3 +57,9 @@ Increase your productivity using this 25 minutes pomodoro timer.
 Bored and don't have any friends? Play this simple game with computer.
 ## Live View
 🔗 [Rock Paper Scissors](https://therobinyadav.github.io/web-mini-projects/rock-paper-scissors/)
+
+# Stopwatch
+## About
+This stopwatch will be handy in calculating study durations, rest time between sets, sports etc.
+## Live View
+🔗 [Stopwatch](https://therobinyadav.github.io/web-mini-projects/stopwatch/)
