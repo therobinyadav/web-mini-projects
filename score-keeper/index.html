@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Score Keeper</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="img-box">&nbsp;</div>
+      <h1 class="heading-primary">Score Keeper</h1>
+      <div class="display-box">
+        <p class="score">
+          <span class="player1-score">0</span> to
+          <span class="player2-score">0</span>
+        </p>
+        <p class="instruction">Use the buttons bellow to keep score.</p>
+        <label for="score-limit">Playing To</label>
+        <select class="score-limit" name="score-limit" id="score-limit">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="controls">
+        <button class="btn btn-player1">+1 Player One</button>
+        <button class="btn btn-player2">+1 Player Two</button>
+        <button class="btn btn-reset">Reset</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
