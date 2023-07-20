@@ -10,6 +10,7 @@ const getWeatherData = async function (API_KEY, city) {
   const res = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
   );
+  if (!res.ok) throw new Error('No results :( Try a different query.');
   const data = await res.json();
   return {
     icon: data.weather[0].icon,
@@ -28,7 +29,7 @@ const renderData = function (weatherDataObj) {
     <p class="temperature">${weatherDataObj.temperature}&deg;C</p>
     <p class="description">${weatherDataObj.description}</p>
     <div class="weather-details">
-      <span class="feels-like">Feels like: ${weatherDataObj.feelsLike}</span>
+      <span class="feels-like">Feels like: ${weatherDataObj.feelsLike}&deg;C</span>
       <span class="humidity">Humidity: ${weatherDataObj.humidity}%</span>
       <span class="wind-speed">Wind speed: ${weatherDataObj.windSpeed}m/s</span>
     </div>
@@ -36,7 +37,14 @@ const renderData = function (weatherDataObj) {
   weatherDataEl.insertAdjacentHTML('beforeend', markup);
 };
 
+const renderError = function (msg) {
+  weatherDataEl.innerHTML = '';
+  weatherDataEl.textContent = msg;
+};
+
 getWeatherBtnEL.addEventListener('click', function (e) {
   e.preventDefault();
-  getWeatherData(KEY, cityInputEl.value).then(data => renderData(data));
+  getWeatherData(KEY, cityInputEl.value)
+    .then(data => renderData(data))
+    .catch(err => renderError(err.message));
 });
