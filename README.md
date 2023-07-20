@@ -69,3 +69,9 @@ This stopwatch will be handy in calculating study durations, rest time between s
 Playing a two player game and want to keep track of the scores? Use this score keeper to do this task. Set a score limit and enjoy playing. It also highlights the score of the winner and the loser with different colors. In the course it was built using bulma but I tried making this using pure CSS. I created this when I was taking the [Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) by Colt Steele.
 ## Live View
 🔗 [Score Keeper](https://therobinyadav.github.io/web-mini-projects/score-keeper/)
+
+# Weather App
+## About
+A simple weather app. Just enter the location and get weather details instantly.
+## Live View
+🔗 [Weather App](https://therobinyadav.github.io/web-mini-projects/weather-app/)
