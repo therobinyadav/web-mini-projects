@@ -75,3 +75,9 @@ Playing a two player game and want to keep track of the scores? Use this score k
 A simple weather app. Just enter the location and get weather details instantly.
 ## Live View
 🔗 [Weather App](https://therobinyadav.github.io/web-mini-projects/weather-app/)
+
+# Image Search
+## About
+Enter a query and get 9 top quality images from unsplash.
+## Live View
+🔗 [Image Search](https://therobinyadav.github.io/web-mini-projects/image-search/)
