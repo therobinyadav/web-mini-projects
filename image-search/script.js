@@ -24,20 +24,25 @@ const getImages = async function (ACCESS_KEY, query) {
 
 const renderImages = function (imgArr) {
   imageResultsEL.innerHTML = '';
-  imgArr.forEach(img => {
-    const markup = `
+  let markup = '';
+  if (imgArr.length !== 0) {
+    imgArr.forEach(img => {
+      markup += `
       <div class="image-result">
-        <a href="${img.imgUrl}" target="_blank">
-          <img class="image" src="${img.imgUrl}" alt="${img.alt}" />
-        </a>
+      <a href="${img.imgUrl}" target="_blank">
+      <img class="image" src="${img.imgUrl}" alt="${img.alt}" />
+      </a>
       </div>
-    `;
-
-    imageResultsEL.insertAdjacentHTML('beforeend', markup);
-  });
+      `;
+    });
+  } else {
+    markup = 'No results found :(';
+  }
+  imageResultsEL.insertAdjacentHTML('beforeend', markup);
 };
 
 btnSearchEl.addEventListener('click', function (e) {
   e.preventDefault();
   getImages(KEY, searchInputEl.value).then(images => renderImages(images));
+  searchInputEl.value = '';
 });
