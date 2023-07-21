@@ -41,3 +41,18 @@ nav {
 .image:hover {
   scale: 1.2;
 }
+
+/* MEDIA QUERIES */
+/* 600px */
+@media only screen and (max-width: 37.5em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
