@@ -81,3 +81,9 @@ A simple weather app. Just enter the location and get weather details instantly.
 Enter a query and get 9 top quality images from unsplash.
 ## Live View
 🔗 [Image Search](https://therobinyadav.github.io/web-mini-projects/image-search/)
+
+# Omnifood
+## About
+Omnifood is a fictional startup which uses AI to create and deliver custom healthy meal plans. And this project's goal was to create a modern and professional looking website for this startup before they launch their product. I created this when I was taking the [Build Responsive Real-World Websites with HTML and CSS](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/) by Jonas Schmedtmann.
+## Live View
+🔗 [Omnifood](https://therobinyadav.github.io/web-mini-projects/omnifood/)
