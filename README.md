@@ -4,6 +4,12 @@ This is a very basic level age calculator that takes your DOB as input and displ
 ## Live View
 🔗 [Age Calculator](https://therobinyadav.github.io/web-mini-projects/age-calculator/)
 
+# Basic Calculator
+## About
+A simple calculator for simple operations. I used `eval()` even though it's not recommended to use. This is a small project so achieving the result was major focus than how it's accomplished.
+## Live View
+🔗 [Basic Calculator](https://therobinyadav.github.io/web-mini-projects/basic-calculator/)
+
 # Dice Roll
 ## About
 Don't have a physical dice? Use this to randomly generate a dice roll and keep track of roll history.
