@@ -10,6 +10,12 @@ A simple calculator for simple operations. I used `eval()` even though it's not 
 ## Live View
 🔗 [Basic Calculator](https://therobinyadav.github.io/web-mini-projects/basic-calculator/)
 
+# Dad Jokes Generator
+## About
+No it doesn't generates a joke. It just fetches a random joke from an API.
+## Live View
+🔗 [Dad Jokes Generator](https://therobinyadav.github.io/web-mini-projects/dad-jokes-generator/)
+
 # Dice Roll
 ## About
 Don't have a physical dice? Use this to randomly generate a dice roll and keep track of roll history.
