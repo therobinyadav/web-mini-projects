@@ -4,6 +4,7 @@ const btnEl = document.querySelector('.btn');
 const jokeEl = document.querySelector('.joke');
 
 btnEl.addEventListener('click', async function () {
+  jokeEl.textContent = 'Fetching a joke...';
   try {
     const res = await fetch('https://icanhazdadjoke.com', {
       headers: { Accept: 'application/json' },
