@@ -11,41 +11,50 @@ const getImages = async function (ACCESS_KEY, query) {
     const res = await fetch(
       `https://api.unsplash.com/search/photos/?per_page=30&client_id=${ACCESS_KEY}&query=${query}`
     );
-    if (!res.ok) throw new Error();
-    const { results } = await res.json();
-    return results.map(result => {
+    if (!res.ok) {
+      if (res.status === 403) {
+        throw new Error('Rate limit exceeded! Try again later.');
+      } else {
+        throw new Error('Something went wrong :(');
+      }
+    }
+    let { results } = await res.json();
+    results = results.map(result => {
       return {
         imgUrl: result.urls.regular,
         alt: result.alt_description,
         link: result.links.html,
       };
     });
-  } catch {
-    imageResultsEL.textContent = 'Something went wrong :(';
+    if (results.length) {
+      imageResultsEL.classList.remove('error');
+      renderImages(results);
+    } else {
+      throw new Error('No results found :(');
+    }
+  } catch (err) {
+    imageResultsEL.classList.add('error');
+    imageResultsEL.textContent = err.message;
   }
 };
 
 const renderImages = function (imgArr) {
   imageResultsEL.innerHTML = '';
   let markup = '';
-  if (imgArr.length !== 0) {
-    imgArr.forEach(img => {
-      markup += `
+  imgArr.forEach(img => {
+    markup += `
       <div class="image-result">
         <a href="${img.imgUrl}" target="_blank">
           <img class="image" src="${img.imgUrl}" alt="${img.alt}" />
         </a>
       </div>
       `;
-    });
-  } else {
-    markup = 'No results found :(';
-  }
+  });
   imageResultsEL.insertAdjacentHTML('beforeend', markup);
 };
 
 btnSearchEl.addEventListener('click', function (e) {
   e.preventDefault();
-  getImages(KEY, searchInputEl.value).then(images => renderImages(images));
+  getImages(KEY, searchInputEl.value);
   searchInputEl.value = '';
 });
