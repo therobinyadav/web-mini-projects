@@ -8,18 +8,16 @@ const btnSearchEl = document.querySelector('.btn-search');
 
 const getImages = async function (ACCESS_KEY, query) {
   const res = await fetch(
-    `https://api.unsplash.com/search/photos/?client_id=${ACCESS_KEY}&query=${query}`
+    `https://api.unsplash.com/search/photos/?per_page=30&client_id=${ACCESS_KEY}&query=${query}`
   );
   const { results } = await res.json();
-  return results
-    .map(result => {
-      return {
-        imgUrl: result.urls.regular,
-        alt: result.alt_description,
-        link: result.links.html,
-      };
-    })
-    .slice(0, 9);
+  return results.map(result => {
+    return {
+      imgUrl: result.urls.regular,
+      alt: result.alt_description,
+      link: result.links.html,
+    };
+  });
 };
 
 const renderImages = function (imgArr) {
