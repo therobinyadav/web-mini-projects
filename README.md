@@ -30,7 +30,7 @@ A simple button with glow effect. I created this when I was taking the [Web Deve
 
 # Image Search
 ## About
-Enter a query and get 9 top quality images from unsplash.
+Enter a query and get up to 30 top quality images from unsplash.
 ## Live View
 🔗 [Image Search](https://therobinyadav.github.io/web-mini-projects/image-search/)
 
