@@ -18,6 +18,13 @@ body {
   outline: .2rem solid rgba(3, 125, 255, 0.4);
 }
 
+/* UTILITY CLASSES */
+.error {
+  display: block !important;
+  text-align: center;
+  color: red;
+}
+
 /* MAIN STYLES */
 .header {
   background-color: #5f4bb6;
