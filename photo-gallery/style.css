@@ -26,29 +26,25 @@ body {
 /* UTILITY CLASSES */
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 30rem);
   gap: 4rem;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 30rem);
   gap: 3rem;
 }
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 30rem);
   gap: 2rem;
 }
 
 .grid-5 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 30rem);
   gap: 2rem;
 }
 
@@ -81,6 +77,14 @@ body {
   border-radius: 10em;
   padding: .5em;
   cursor: pointer;
+}
+
+.gallery {
+  justify-content: center;
+}
+
+.image-box {
+  height: 30rem;
 }
 
 .image {
