@@ -47,11 +47,8 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
-  padding-bottom: 2em;
-}
-
-.joke {
-  padding: 1em;
+  padding: 2em;
+  padding-bottom: 3em;
 }
 
 .btn {
