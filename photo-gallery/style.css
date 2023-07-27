@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #342E37 50%, #3C91E6 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*:focus-visible {
+  outline: .4rem solid rgba(3, 125, 255, 0.4);
+}
+
+/* UTILITY CLASSES */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+/* MAIN STYLES */
+.header,
+.container {
+  width: 80%;
+  padding: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 8rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #FAFFFD;
+}
+
+.grid-options {
+  background-color: #342E37;
+  color: #FAFFFD;
+  font-size: 3.2rem;
+  width: 24rem;
+  border: .125em solid #FAFFFD;
+  border-radius: 10em;
+  padding: .5em;
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

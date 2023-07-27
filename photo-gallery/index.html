@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Photo Gallery</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading-primary">Photo Gallery</h1>
+      <select name="grid" class="grid-options">
+        <option value="2">2x2</option>
+        <option value="3" selected>3x3</option>
+        <option value="4">4x4</option>
+        <option value="5">5x5</option>
+      </select>
+    </header>
+
+    <main class="container">
+      <div class="gallery"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
