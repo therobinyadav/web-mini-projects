@@ -1,5 +1,6 @@
 'use strict';
 
+const root = document.documentElement;
 const gridOptionsEl = document.querySelector('.grid-options');
 const galleryEl = document.querySelector('.gallery');
 
@@ -64,6 +65,20 @@ const updateGrid = function () {
     galleryEl.classList.remove(`grid-${i}`);
   }
   galleryEl.classList.add(gridClass);
+  switch (+gridOptionsEl.value) {
+    case 2:
+      root.style.setProperty('--image-height', '35rem');
+      break;
+    case 3:
+      root.style.setProperty('--image-height', '30rem');
+      break;
+    case 4:
+      root.style.setProperty('--image-height', '25rem');
+      break;
+    case 5:
+      root.style.setProperty('--image-height', '20rem');
+      break;
+  }
   renderImages(images);
 };
 

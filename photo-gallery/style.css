@@ -1,3 +1,9 @@
+/* VARIABLES */
+:root {
+  --image-height: 30rem;
+}
+
+/* BASE STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -26,25 +32,25 @@ body {
 /* UTILITY CLASSES */
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 30rem);
+  grid-template-columns: repeat(2, var(--image-height));
   gap: 4rem;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 30rem);
+  grid-template-columns: repeat(3, var(--image-height));
   gap: 3rem;
 }
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(4, 30rem);
+  grid-template-columns: repeat(4, var(--image-height));
   gap: 2rem;
 }
 
 .grid-5 {
   display: grid;
-  grid-template-columns: repeat(5, 30rem);
+  grid-template-columns: repeat(5, var(--image-height));
   gap: 2rem;
 }
 
@@ -84,7 +90,7 @@ body {
 }
 
 .image-box {
-  height: 30rem;
+  height: var(--image-height);
 }
 
 .image {
