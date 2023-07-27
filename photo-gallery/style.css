@@ -19,7 +19,7 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.6rem;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #342E37 50%, #3C91E6 50%);
+  background: linear-gradient(to bottom right, #342E37 40%, #3C91E6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,13 +75,14 @@ body {
 }
 
 .grid-options {
+  text-align: center;
   background-color: #342E37;
   color: #FAFFFD;
   font-size: 3.2rem;
-  width: 24rem;
+  width: 16rem;
   border: .125em solid #FAFFFD;
   border-radius: 10em;
-  padding: .5em;
+  padding: .5em 0;
   cursor: pointer;
 }
 
