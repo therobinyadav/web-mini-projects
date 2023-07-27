@@ -52,6 +52,12 @@ I know this looks more like a photo gallery. Initially I created this the way it
 ## Live View
 🔗 [Photo Blog](https://therobinyadav.github.io/web-mini-projects/photo-blog/)
 
+# Photo Gallery
+## About
+Get random top quality images from unsplash and display them in a grid of your choice.
+## Live View
+🔗 [Photo Gallery](https://therobinyadav.github.io/web-mini-projects/photo-gallery/)
+
 # Pomodoro Timer
 ## About
 Increase your productivity using this 25 minutes pomodoro timer.
