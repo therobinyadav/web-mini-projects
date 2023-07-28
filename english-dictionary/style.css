@@ -21,6 +21,7 @@ body {
 
 /* MAIN STYLES */
 .container {
+  width: 40rem;
   background-color: rgba(255, 255, 255, 0.075);
   color: #ddd;
   border-radius: 1em;
@@ -29,10 +30,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.heading-primary {
-  text-align: center;
 }
 
 .form {
@@ -72,4 +69,16 @@ body {
 .word-input:focus-visible {
   outline: none;
   border: .2rem solid currentColor;
+}
+
+.word {
+  margin-bottom: .25em;
+}
+
+.meaning {
+  margin-bottom: 1.5em;
+}
+
+.word-audio {
+  width: 100%;
 }
