@@ -22,6 +22,12 @@ Don't have a physical dice? Use this to randomly generate a dice roll and keep t
 ## Live View
 🔗 [Dice Roll](https://therobinyadav.github.io/web-mini-projects/dice-roll/)
 
+# English Dictionary
+## About
+Search for any English word and get its meaning with pronunciation audio if available.
+## Live View
+🔗 [English Dictionary](https://therobinyadav.github.io/web-mini-projects/english-dictionary/)
+
 # Fancy Button
 ## About
 A simple button with glow effect. I created this when I was taking the [Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) by Colt Steele.
