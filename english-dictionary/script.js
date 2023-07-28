@@ -19,17 +19,27 @@ const getMeaning = async function (word) {
 
 const renderResult = function (resultObj) {
   resultBoxEl.innerHTML = '';
-  const markup = `
-    <div class="result">
-      <h2 class="word">${resultObj.word}</h2>
-      <p class="meaning">${resultObj.meaning}</p>
-      <audio
-      controls
-      class="word-audio"
-      src="${resultObj.audioSrc}">
-      </audio>
-    </div>
-  `;
+  let markup;
+  if (resultObj.audioSrc) {
+    markup = `
+      <div class="result">
+        <h2 class="word">${resultObj.word}</h2>
+        <p class="meaning">${resultObj.meaning}</p>
+        <audio
+        controls
+        class="word-audio"
+        src="${resultObj.audioSrc}">
+        </audio>
+      </div>
+    `;
+  } else {
+    markup = `
+      <div class="result">
+        <h2 class="word">${resultObj.word}</h2>
+        <p class="meaning">${resultObj.meaning}</p>
+      </div>
+    `;
+  }
   resultBoxEl.insertAdjacentHTML('beforeend', markup);
 };
 
