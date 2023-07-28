@@ -5,16 +5,22 @@ const searchBtnEl = document.querySelector('.btn-search');
 const resultBoxEl = document.querySelector('.result-box');
 
 const getMeaning = async function (word) {
-  const res = await fetch(
-    `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
-  );
-  const [data] = await res.json();
-  const result = {
-    word: data.word.replace(data.word[0], data.word[0].toUpperCase()),
-    meaning: data.meanings[0].definitions[0].definition,
-    audioSrc: data.phonetics[0].audio,
-  };
-  renderResult(result);
+  try {
+    const res = await fetch(
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+    );
+    if (!res.ok) throw new Error('Something went wrong :(');
+    const [data] = await res.json();
+    const result = {
+      word: data.word.replace(data.word[0], data.word[0].toUpperCase()),
+      meaning: data.meanings[0].definitions[0].definition,
+      audioSrc: data.phonetics[0].audio,
+    };
+    renderResult(result);
+  } catch (err) {
+    resultBoxEl.innerHTML = '';
+    resultBoxEl.insertAdjacentHTML('beforeend', `<p>${err.message}</p>`);
+  }
 };
 
 const renderResult = function (resultObj) {
