@@ -46,7 +46,7 @@ body {
   color: #ddd;
   padding: .25em .5em;
   border: .2rem solid rgba(255, 255, 255, 0.15);
-  flex: 1;
+  width: 100%;
 }
 
 .btn-search {
@@ -81,4 +81,12 @@ body {
 
 .word-audio {
   width: 100%;
+}
+
+/* MEDIA QUERIES */
+/* 400px */
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
 }
