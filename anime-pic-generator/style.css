@@ -73,3 +73,11 @@ body {
   color: #9F2042;
   background-color: transparent;
 }
+
+/* MEDIA QUERIES */
+/* 400px */
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
+}
