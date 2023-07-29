@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Borel', cursive;
+  font-size: 1.6rem;
+  color: #9F2042;
+  background-color: pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN STYLES */
+.container {
+  padding: 2rem;
+  border: .4rem solid currentColor;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-box {
+  width: 20rem;
+  height: 20rem;
+  border: .4rem solid currentColor;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.btn-generate {
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: pink;
+  background-color: #9F2042;
+  margin-top: 2rem;
+  padding: 1em 1em .5em;
+  border: .2em solid #9F2042;
+  border-radius: 10em;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn-generate:hover,
+.btn-generate:focus-visible {
+  outline: none;
+  color: #9F2042;
+  background-color: transparent;
+}
