@@ -1,6 +1,7 @@
 'use strict';
 
 const imageEl = document.querySelector('.image');
+const loadingEl = document.querySelector('.loading');
 const generateBtnEl = document.querySelector('.btn-generate');
 
 const generateImage = async function () {
@@ -12,4 +13,15 @@ const generateImage = async function () {
 // Displays a random image on page load
 generateImage();
 
-generateBtnEl.addEventListener('click', generateImage);
+imageEl.addEventListener('load', function () {
+  loadingEl.classList.toggle('hidden');
+  imageEl.classList.toggle('hidden');
+});
+
+generateBtnEl.addEventListener('click', async function () {
+  loadingEl.classList.toggle('hidden');
+  imageEl.classList.toggle('hidden');
+  generateBtnEl.textContent = 'Generating...';
+  await generateImage();
+  generateBtnEl.textContent = 'Generate';
+});
