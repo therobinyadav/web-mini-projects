@@ -4,6 +4,12 @@ This is a very basic level age calculator that takes your DOB as input and displ
 ## Live View
 🔗 [Age Calculator](https://therobinyadav.github.io/web-mini-projects/age-calculator/)
 
+# Anime Pic Generator
+## About
+Displays random picture of anime characters.
+## Live View
+🔗 [Anime Pic Generator](https://therobinyadav.github.io/web-mini-projects/anime-pic-generator/)
+
 # Basic Calculator
 ## About
 A simple calculator for simple operations. I used `eval()` even though it's not recommended to use. This is a small project so achieving the result was major focus than how it's accomplished.
