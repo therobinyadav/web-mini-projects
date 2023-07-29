@@ -14,7 +14,7 @@ const getMeaning = async function (word) {
     const result = {
       word: data.word.replace(data.word[0], data.word[0].toUpperCase()),
       meaning: data.meanings[0].definitions[0].definition,
-      audioSrc: data.phonetics[0].audio,
+      audioSrc: data.phonetics[0]?.audio,
     };
     renderResult(result);
   } catch (err) {
