@@ -7,16 +7,16 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   background-color: #222;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MAIN STYLES */
