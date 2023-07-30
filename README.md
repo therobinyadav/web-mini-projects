@@ -40,6 +40,12 @@ A simple button with glow effect. I created this when I was taking the [Web Deve
 ## Live View
 🔗 [Fancy Button](https://therobinyadav.github.io/web-mini-projects/fancy-button/)
 
+# Guess My Number
+## About
+A simple guessing game where you need to guess the secret number which is between 1 and 20.
+## Live View
+🔗 [Guess My Number](https://therobinyadav.github.io/web-mini-projects/guess-my-number/)
+
 # Image Search
 ## About
 Enter a query and get up to 30 top quality images from unsplash.
