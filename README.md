@@ -42,7 +42,7 @@ A simple button with glow effect. I created this when I was taking the [Web Deve
 
 # Guess My Number
 ## About
-A simple guessing game where you need to guess the secret number which is between 1 and 20.
+A simple guessing game where you need to guess the secret number which is between 1 and 20. I created this when I was taking the [The Complete JavaScript Course: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/) by Jonas Schmedtmann.
 ## Live View
 🔗 [Guess My Number](https://therobinyadav.github.io/web-mini-projects/guess-my-number/)
 
