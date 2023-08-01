@@ -27,13 +27,13 @@ body {
 }
 
 .container {
-  width: 80%;
-  margin: 3.2rem auto;
+  padding: 3.2rem;
 }
 
 .notes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  justify-content: center;
   gap: 2rem;
 }
 
