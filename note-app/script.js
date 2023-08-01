@@ -6,7 +6,7 @@ const notesContainerEl = document.querySelector('.notes');
 const createNote = function () {
   const newNote = `
     <div class="note">
-      <textarea class="note-text"></textarea>
+      <textarea class="note-text" placeholder="Type something..."></textarea>
     </div>
   `;
   createNoteEl.insertAdjacentHTML('beforebegin', newNote);
