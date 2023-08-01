@@ -58,6 +58,12 @@ A landing page for a candy museum. In the course it was built using bootstrap bu
 ## Live View
 🔗 [Museum of Candy](https://therobinyadav.github.io/web-mini-projects/museum-of-candy/)
 
+# Note App
+## About
+A minimalist note app for taking short and simple notes. I know it looks like sticky notes. It doesn't persists data which means your notes will be gone if page reloads or closes. Have fun!
+## Live View
+🔗 [Note App](https://therobinyadav.github.io/web-mini-projects/note-app/)
+
 # Omnifood
 ## About
 Omnifood is a fictional startup which uses AI to create and deliver custom healthy meal plans. And this project's goal was to create a modern and professional looking website for this startup before they launch their product. I created this when I was taking the [Build Responsive Real-World Websites with HTML and CSS](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/) by Jonas Schmedtmann.
