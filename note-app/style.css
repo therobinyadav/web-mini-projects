@@ -26,6 +26,10 @@ body {
   font-size: 4.8rem;
 }
 
+.delete-instruction {
+  color: #888;
+}
+
 .container {
   padding: 3.2rem;
 }

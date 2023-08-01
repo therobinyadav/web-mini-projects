@@ -18,3 +18,9 @@ const createNote = function () {
 };
 
 createNoteEl.addEventListener('click', createNote);
+
+// Removing note on double click
+notesContainerEl.addEventListener('dblclick', function (e) {
+  e.target.classList[0] === 'note' && e.target.remove();
+  e.target.classList[0] === 'note-text' && e.target.parentElement.remove();
+});
