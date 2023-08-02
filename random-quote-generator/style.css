@@ -1,3 +1,8 @@
+/* VARIABLES */
+:root {
+  --random-color: '';
+}
+
 /* BASE STYLES */
 * {
   margin: 0;
@@ -17,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color: var(--random-color);
 }
 
 /* MAIN STYLES */
@@ -32,7 +37,7 @@ body {
   font-family: 'Marck Script', cursive;
   font-size: 2.4rem;
   line-height: 1.15;
-  color: #444;
+  color: #333;
 }
 
 .quote-author {
@@ -45,7 +50,13 @@ body {
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: 600;
-  border: none;
   padding: .5em 1em;
+  border: none;
+  color: #fff;
+  background-color: var(--random-color);
   cursor: pointer;
+}
+
+.btn:focus-visible {
+  outline: 0.2rem solid rgba(0, 0, 0, 0.2);
 }
