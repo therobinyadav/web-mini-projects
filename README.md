@@ -16,6 +16,12 @@ A simple calculator for simple operations. I used `eval()` even though it's not 
 ## Live View
 🔗 [Basic Calculator](https://therobinyadav.github.io/web-mini-projects/basic-calculator/)
 
+# BMI Calculator
+## About
+Enter your height and weight and know your Body Mass Index with weight condition.
+## Live View
+🔗 [BMI Calculator](https://therobinyadav.github.io/web-mini-projects/bmi-calculator/)
+
 # Dad Jokes Generator
 ## About
 No it doesn't generates a joke. It just fetches a random joke from an API.
