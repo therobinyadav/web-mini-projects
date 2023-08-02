@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+*:focus-visible {
+  outline: 0.2rem solid rgba(40, 167, 70, 0.4);
+}
+
+/* MAIN STYLES */
+
+.container {
+  width: 40rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding: 1.25em;
+  color: #333;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: .5em;
+}
+
+.input {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #777;
+  border: .125em solid #ccc;
+  padding: .4em .8em;
+  border-radius: .3em;
+}
+
+.input:first-of-type {
+  margin-bottom: .5em;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: .4em .8em;
+  border-radius: .2em;
+  margin-top: 1.4em;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #24923d;
+}
+
+.result {
+  font-size: 1.2rem;
+  margin-top: 1.4em;
+}
+
+.bmi,
+.weight-condition {
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+
+/* MEDIA QUERIES */
+/* 400 px */
+@media only screen and (max-width: 25em) {
+  .container {
+    box-shadow: none;
+  }
+}
