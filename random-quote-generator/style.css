@@ -1,0 +1,51 @@
+/* BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+/* MAIN STYLES */
+.container {
+  width: 40rem;
+  padding: 2rem;
+  margin: 0 2rem;
+  background-color: #fff;
+}
+
+.quote-text {
+  font-family: 'Marck Script', cursive;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  color: #444;
+}
+
+.quote-author {
+  text-align: right;
+  color: #888;
+  margin: 1.2rem 0;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  padding: .5em 1em;
+  cursor: pointer;
+}
