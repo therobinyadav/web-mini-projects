@@ -28,11 +28,13 @@ const changeColor = function () {
 
 // Initializing with a quote and a color
 (async function () {
+  quoteTextEl.textContent = 'Loading...';
   await getRandomQuote();
   changeColor();
 })();
 
 btnEl.addEventListener('click', async function () {
+  quoteTextEl.textContent = 'Loading...';
   await getRandomQuote();
   changeColor();
 });
