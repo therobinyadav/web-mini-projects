@@ -100,6 +100,12 @@ A fully responsive pricing panel component. I created this when I was taking the
 ## Live View
 🔗 [Pricing Panel](https://therobinyadav.github.io/web-mini-projects/pricing-panel/)
 
+# Random Quote Generator
+## About
+A random quote generator that changes color as the quote changes. You will understand what I mean once you see it.
+## Live View
+🔗 [Random Quote Generator](https://therobinyadav.github.io/web-mini-projects/random-quote-generator/)
+
 # Recipe Book
 ## About
 Search for a keyword and this app wil list down all recipes with their respective links using this [API](https://forkify-api.herokuapp.com/v2).
