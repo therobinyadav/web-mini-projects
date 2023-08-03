@@ -130,6 +130,12 @@ This stopwatch will be handy in calculating study durations, rest time between s
 ## Live View
 🔗 [Stopwatch](https://therobinyadav.github.io/web-mini-projects/stopwatch/)
 
+# Temperature Convertor
+## About
+This temperature convertor shows converted values in other 2 scales if you change value in any one of 3 scales.
+## Live View
+🔗 [Temperature Convertor](https://therobinyadav.github.io/web-mini-projects/temperature-convertor/)
+
 # Tip Calculator
 ## About
 This is a handy tip calculator which takes bill amount and tip percentage as input to calculate and display total amount.
