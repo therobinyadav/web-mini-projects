@@ -58,6 +58,12 @@ Enter a query and get up to 30 top quality images from unsplash.
 ## Live View
 🔗 [Image Search](https://therobinyadav.github.io/web-mini-projects/image-search/)
 
+# Mini Calendar
+## About
+Displays the current year, month, day and date in a mini calendar card-like component.
+## Live View
+🔗 [Mini Calendar](https://therobinyadav.github.io/web-mini-projects/mini-calendar/)
+
 # Museum of Candy
 ## About
 A landing page for a candy museum. In the course it was built using bootstrap but I tried making this using pure CSS. I created this when I was taking the [Web Developer Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) by Colt Steele.
