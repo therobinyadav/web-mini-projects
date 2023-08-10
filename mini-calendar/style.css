@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: cursive;
+  background-color: #43BCCD;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender {
+  text-align: center;
+  background-color: #F9C80E;
+  font-size: 2.4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.details {
+  padding: 2rem;
+}
+
+.month {
+  font-size: 4.8rem;
+  font-weight: bold;
+  background-color: #EA3546;
+  padding: .25em 1em;
+}
+
+.date {
+  font-size: 9.6rem;
+  font-weight: bold;
+}
