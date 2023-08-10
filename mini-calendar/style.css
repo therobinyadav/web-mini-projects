@@ -20,6 +20,7 @@ body {
 
 .calender {
   text-align: center;
+  width: 30rem;
   background-color: #F9C80E;
   font-size: 2.4rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
@@ -35,7 +36,7 @@ body {
   font-size: 4.8rem;
   font-weight: bold;
   background-color: #EA3546;
-  padding: .25em 1em;
+  padding: .25em 0;
 }
 
 .date {
