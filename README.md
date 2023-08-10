@@ -88,6 +88,12 @@ Get random top quality images from unsplash and display them in a grid of your c
 ## Live View
 🔗 [Photo Gallery](https://therobinyadav.github.io/web-mini-projects/photo-gallery/)
 
+# Pig Game
+## About
+This is not about the pig animal. It's a game where you roll dice and try to reach 100 score first. Your dice rolls keeps adding to current score. But if dice roll is 1 then current score sets to 0. So you need to play smartly and hold score accordingly. And you will get to know other small details once you play it.
+## Live View
+🔗 [Pig Game](https://therobinyadav.github.io/web-mini-projects/pig-game/)
+
 # Pomodoro Timer
 ## About
 Increase your productivity using this 25 minutes pomodoro timer.
