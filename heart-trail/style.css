@@ -6,18 +6,36 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 body {
   background-color: #000;
   height: 100vh;
+  overflow: hidden;
 }
 
 .heart {
-  display: block;
   background-image: url(https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png);
   background-size: cover;
-  width: 10rem;
-  height: 10rem;
+  pointer-events: none;
+  position: absolute;
+  translate: -50% -50%;
+  animation-name: heartLeave;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heartLeave {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    transform: translateY(-1000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
 }
