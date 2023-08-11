@@ -52,6 +52,12 @@ A simple guessing game where you need to guess the secret number which is betwee
 ## Live View
 🔗 [Guess My Number](https://therobinyadav.github.io/web-mini-projects/guess-my-number/)
 
+# Heart Trail
+## About
+Beautiful trailing hearts as you move your cursor.
+## Live View
+🔗 [Heart Trail](https://therobinyadav.github.io/web-mini-projects/heart-trail/)
+
 # Image Search
 ## About
 Enter a query and get up to 30 top quality images from unsplash.
