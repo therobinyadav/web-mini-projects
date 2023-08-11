@@ -54,7 +54,7 @@ A simple guessing game where you need to guess the secret number which is betwee
 
 # Heart Trail
 ## About
-Beautiful trailing hearts as you move your cursor.
+Beautiful trailing hearts as you move your cursor on desktop or touch and move on mobile.
 ## Live View
 🔗 [Heart Trail](https://therobinyadav.github.io/web-mini-projects/heart-trail/)
 
