@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.heart {
+  display: block;
+  background-image: url(https://cdn4.iconfinder.com/data/icons/twitter-29/512/166_Heart_Love_Like_Twitter-512.png);
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+}
