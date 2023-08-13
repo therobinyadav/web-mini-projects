@@ -28,6 +28,12 @@ No it doesn't generates a joke. It just fetches a random joke from an API.
 ## Live View
 🔗 [Dad Jokes Generator](https://therobinyadav.github.io/web-mini-projects/dad-jokes-generator/)
 
+# Dark Mode Toggle
+## About
+A toggle switch that switches to dark theme from light theme and vice versa.
+## Live View
+🔗 [Dark Mode Toggle](https://therobinyadav.github.io/web-mini-projects/dark-mode-toggle/)
+
 # Dice Roll
 ## About
 Don't have a physical dice? Use this to randomly generate a dice roll and keep track of roll history.
