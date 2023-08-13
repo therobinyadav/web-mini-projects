@@ -1,0 +1,44 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  position: relative;
+}
+
+.toggle {
+  width: 8rem;
+  height: 4rem;
+  border: .125em solid var(--color-black);
+  border-radius: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  cursor: pointer;
+}
+
+.switch {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: .125em;
+  translate: 0 -50%;
+}
